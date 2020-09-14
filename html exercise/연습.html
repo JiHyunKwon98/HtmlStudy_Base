@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Basic</title>
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <script>
+      var colors = ['red','green','blue']
+      var currentColor = 0
+      var count = 0
+      $(document).ready(function () {
+         $('div').css({
+            backgroundColor: colors[currentColor]
+         }).click(function () {
+            var idx = (++count)%3
+            $(this).css('background',colors[idx])
+            })
+      })
+   </script>
+   <style>
+      div{
+         width:100px;
+         height:50px;
+         line-height:50px;
+         text-align: center;
+         color:white;
+         border:none;
+         border-radius: 10px;
+      }
+   </style>
+</head>
+<body>
+   <div>버튼</div>
+</body>
+</html>

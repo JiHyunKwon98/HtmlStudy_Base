@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	jquery basic</title>
+	<style>
+		
+		#box{
+
+			width: 100px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			color: white;
+			background-color: teal;
+			border-radius: 20px;
+			opacity: 1;
+
+		}
+
+		#box.hover{
+			
+			width: 100px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			color: white;
+			background-color: teal;
+			border-radius: 20px;
+			opacity: 0.5;
+
+		}
+
+	</style>
+
+	<script src="jquery-1.12.0.min.js"> </script>
+	
+	<script>
+		$(document).ready(function(){
+
+			$('#box').hover(function(){
+				$('#box').addClass('hover');
+			
+			},
+			function(){
+				$('#box').removeClass('hover');
+
+			});
+			});
+	</script>
+
+</head>
+<body>
+<div id = "box">버튼</div>
+</body>
+</html>

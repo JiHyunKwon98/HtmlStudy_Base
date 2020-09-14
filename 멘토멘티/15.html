@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>멘티 수업정보</title>
+
+	<script src="jquery-1.12.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+      $('.hearticon').click(function(){
+        var src = ($(this).attr('src') === 'images/heart.png')
+            ? 'images/redheart.png' //빨간하트
+            : 'images/heart.png'; //빈하트
+         $(this).attr('src', src);   
+         });
+   });
+	</script>
+
+	<style>
+		* { margin: 0; padding: 0; }
+
+		#header-area {
+			float: left;
+			width: 100%;
+			height: 120px;
+			background-color: rgba(232, 156, 107, 0.6);
+		}
+
+		.text {
+			text-align: center;
+			line-height: 120px;
+			font-size: 3.8em;
+			font-weight: bold;
+			font-family: '본고딕';
+			color: rgb(52, 73, 94);
+		}
+
+		.backicon {
+			position: fixed;
+			top: 30px; left: 30px;
+			width: 50px;
+		}
+
+		#con-area {
+			float: left;
+			position: fixed;
+			top:120px;
+			width: 100%;
+			height: 250px;
+			border-bottom: 4px solid rgba(232, 156, 107, 0.6);
+		}
+
+		.text2 {
+			padding: 30px;
+			font-size: 4em;
+			font-family: '본고딕';
+		}
+
+		.text3 {
+			display: inline-block;
+			padding-top: 30px;
+			padding-left: 30px;
+			font-size: 2em;
+			font-family: '본고딕';
+		}
+
+		.text4 {
+			display: inline-block;
+			padding-top: 30px;
+			padding-left: 110px;
+			color: red;
+			font-size: 2em;
+			font-weight: bold;
+			font-family: '본고딕';
+		}
+
+		.hearticon {
+			float: right;
+			position: fixed;
+			top: 150px; right: 30px;
+			width: 70px;
+		}
+
+		#con2-area {
+			position: fixed;
+			top: 370px;
+			bottom: 150px;
+			float: left;
+			width: 100%;
+			overflow-y: scroll;
+		}
+
+		.sel {
+			position: relative;
+			height: 300px;
+		}
+
+		.sel1 {
+			position: relative;
+			height: 400px;
+		}
+
+		.s {
+			padding: 50px;
+			font-size: 3em;
+			font-weight: bold;
+			font-family: '본고딕';
+			color: rgb(52, 73, 94);
+		}
+
+		.s2 {
+			padding: 20px;
+			margin-left: 40px;
+			margin-right: 40px;
+			margin-bottom: 40px;
+			font-size: 2.2em;
+			font-family: '본고딕';
+		}
+
+		.s3 {
+			float: left;
+			padding: 20px;
+			margin-left: 40px;
+			margin-right: 200px;
+			font-size: 2.5em;
+			font-family: '본고딕';
+		}
+
+		.mo {
+			display: inline-block;
+			float: left;
+			padding: 20px;
+			margin-left: 40px;
+			font-size: 2.5em;
+			font-weight: bold;
+			font-family: '본고딕';
+			color: rgb(52, 73, 94);
+		}
+
+		#footer-area {
+			position: fixed;
+			bottom: 0; left: 0;
+			width: 100%;
+		}
+
+		.ef {
+			float: left;
+			text-align: center;
+			font-size: 2.5em;
+			padding: 20px 0px;
+			width: 33%;
+			height: 110px;
+			line-height: 110px;
+			color: white;
+			font-weight: bold;
+			font-family: '함초롬바탕';
+			border-right: 2px solid #DDD;
+			background-color: rgba(232, 156, 107, 0.76);
+		}
+
+		.kf {
+			display: inline-block;
+			text-align: center;
+			font-size: 2.5em;
+			padding: 20px 0px;
+			width: 33.5%;
+			height: 110px;
+			line-height: 110px;
+			color: white;
+			font-weight: bold;
+			font-family: '함초롬바탕';
+			background-color: rgba(232, 156, 107, 0.6);
+		}
+
+		.cf {
+			float: right;
+			text-align: center;
+			font-size: 2.5em;
+			padding: 20px 0px;
+			width: 33%;
+			height: 110px;
+			line-height: 110px;
+			color: white;
+			font-weight: bold;
+			font-family: '함초롬바탕';
+			border-left: 2px solid #DDD;
+			background-color: rgba(232, 156, 107, 0.76);
+		}
+		
+	</style>
+
+</head>
+<body>
+	<div id="header-area">
+		<p class="text">멘티 수업정보</p>
+		<a href="9.html">
+			<img class="backicon" src="images/back.png">
+		</a>
+	</div>
+	<div id="con-area">
+		<p class="text2">(노원)영어 기초 문법</p>
+		<p class="text3">영어 문법 가르쳐줄 멘토님 구합니다!</p>
+		<p class="text4">수강료</p> <p class="text3">월 50만원</p> 
+		<img class="hearticon" src="images/heart.png">
+	</div>
+	<div id="con2-area">
+		<div class="sel">
+			<p class="s" class="mb">멘토링 분야</p>
+			<p class="s2">영어</p>
+		</div>
+		<div class="sel">
+			<p class="s" class="mj">멘토링 지역</p>
+			<p class="s2">서울시 노원구</p>
+		</div>
+		<div class="sel1">
+			<p class="s" class="cs">참고사항</p>
+			<p class="mo">수강료</p> <p class="s3">50만원 (한달 기준)</p>
+			<p class="mo">기간 &nbsp&nbsp</p> <p class="s3">2019.12.01~(약 3개월)</p>
+		</div>
+		<div class="sel">
+			<p class="s" class="yms">요일 및 시간</p>
+			<p class="s2">월, 수, 금  &nbsp 오후 6:30~8:00 (협의 가능)</p>
+		</div>
+		<div class="sel">
+			<p class="s" class="ss">세부사항</p>
+			<p class="s2">실력은 물론이고 재미있게 수업하시는 선생님이셨으면 좋겠습니다.</p>
+		</div>
+	</div>
+	<div id="footer-area">
+		<p class="ef">
+			e-mail지원
+		</p>
+		<p class="kf">
+			카카오톡 지원
+		</p>
+		<p class="cf">전화 지원</p>
+	</div>
+	
+</body>
+</html>

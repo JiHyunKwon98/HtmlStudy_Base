@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>멘토멘티</title>
+  <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=0" charset="UTF-8">
+<style>
+
+* {
+font-family: HanSans;}
+body {
+	margin: 0;
+	background-color: rgba(232, 156, 107, 0.2);
+}
+.section {
+	
+	float: left;
+	width: 100%;
+} 
+
+#header-area h2{
+	text-align: left;
+	color: #34495E;
+	float: left;
+	width: 100%;
+	margin: 12px 0px;
+	line-height:100%;
+	}
+
+
+#header-area{
+	background-color:rgba(232, 156, 107, 0.5);
+	float: left;
+	width: 100%;
+}
+
+#back{
+	font-size: 14px;
+	font-weight:bold; 
+	background-color: #EDAE85;
+	color: white;
+	border-radius:6.5px;
+	border-style: none;
+	width: 50px;
+	height: 25px;
+	margin-right:10px; 
+	float: right;
+	
+}
+
+
+.outer-menu{
+	
+	line-height: 25px;
+	position: relative;
+	
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	z-index: 9999;
+	list-style: none;
+	
+	float: left;
+	width: 100%;
+	margin:0;
+	padding: 20px 0px;
+
+}
+
+.outer-menu:hover{
+	font-color: #34495E;
+	background-color:rgba(255, 148, 78, 0.08);
+}
+
+a{
+	text-decoration:none;
+	color:#34495E;
+}
+a:hover{
+	text-decoration:none;
+	color:#34495E;
+}
+
+span{float: right;}
+
+.inner-menu{
+	
+	float: left;
+	width: 100%;
+	list-style: none;
+	display: none;
+	margin-top: 10px;
+	padding-left:0px; 
+}
+
+.inner-menu li{
+	float: left;
+	width: 50%;
+}
+.inner-menu a{
+	display: block;
+	padding: 15px 10px;
+	z-index: 5000;
+	text-decoration:none
+}
+
+	
+
+.outer-menu a:hover{background:rgba(255, 148, 78, 0.08);}
+
+.btn{
+	color:white; 
+	background-color:#34495E;
+	border-radius:6.5px;
+	text-align: center;
+	border-style: none;
+	font-weight: bold;
+}
+#box{
+	text-align: center;
+	float: left;
+	width:90%;
+	background-color:#34495E;
+	border-radius: 9px; 
+		
+}
+#footer-area{
+	height: 100%;
+	background-color: rgba(255, 148, 78, 0.08);
+}
+
+</style>
+
+<script src="jquery-1.12.0.min.js">
+</script>
+
+<script>
+	
+	$(document).ready(function(){
+
+		$('.outer-menu').hover (function(){
+			$(this).find('.inner-menu').css('display','block');
+		}, function(){
+			$(this).find('.inner-menu').css('display','none')
+		});
+	});
+
+	$(document).ready(function(){
+		$('.inner-menu1').hover (function(){
+			$(this).find('.inner-menu2').css('display','block');
+		}, function(){
+			$(this).find('.inner-menu2').css('display','none')
+		});
+	});
+
+$(document).ready(function(){
+		$('.inner-menu1').hover (function(){
+			$(this).find('.inner-menu4').css('display','block');
+		}, function(){
+			$(this).find('.inner-menu4').css('display','none')
+		});
+	});
+
+</script>
+
+</head>
+<body>
+
+<div id="header-area" class="section">
+<h2><a href="23.html"><img src="icon2.png" width="30px;" height ="25px;"alt="My Image"></a> o o o ><input type="button" id="back" value="X" onclick="location.href='5.html'"></h2>
+</div>
+
+
+<div id="content-area" class="section">
+
+<div class="content-menu">
+	<ul class ="outer-menu">
+		<li>
+			<a class="h1"href="#">멘티찾기<span>▼</span></a>
+			<ul class="inner-menu">
+
+				<li class="inner-menu1">
+				
+					<a  href="#">지역별</a>
+
+					<ul class="inner-menu2">
+						<div id="box">
+						<input type="button" class="btn"value="서울">
+						<input type="button" class="btn"value="인천">
+						<input type="button" class="btn"value="경기">
+						<input type="button" class="btn"value="강원">
+						<input type="button" class="btn"value="충남"></br>
+						<input type="button" class="btn"value="충북">
+						<input type="button" class="btn"value="세종">
+						<input type="button" class="btn"value="대전">
+						<input type="button" class="btn"value="부산">
+						<input type="button" class="btn"value="울산">
+						</br>
+						<input type="button" class="btn"value="경남">
+						<input type="button" class="btn"value="경북">
+						<input type="button" class="btn"value="광주">
+						<input type="button" class="btn"value="전남">
+						<input type="button" class="btn"value="전북">
+						</br>
+						<input type="button" class="btn"value="대구">
+						<input type="button" class="btn"value="제주">
+						<input type="button" class="btn"value="전국">
+						
+						
+						</div>
+					
+					</ul>
+				</li>
+				
+				<li class="inner-menu1">
+
+					<a href="#">분야별</a>
+				
+					<ul class="inner-menu4">
+						<div id="box">
+						<input type="button" class="btn"value="중등">
+						<input type="button" class="btn"value="고등">
+						<input type="button" class="btn"value="일반">
+						<input type="button" class="btn"value="수학">
+						<input type="button" class="btn"value="영어"></br>
+						<input type="button" class="btn"value="과학">
+						<input type="button" class="btn"value="국어">
+						<input type="button" class="btn"value="중국어">
+						<input type="button" class="btn"value="일본어">
+						<input type="button" class="btn"value="IT">
+						</br>
+						<input type="button" class="btn"value="미술">
+						<input type="button" class="btn"value="보컬">
+						<input type="button" class="btn"value="댄스">
+						<input type="button" class="btn"value="기타">
+						
+						</div>
+					</ul>
+
+				</li>
+					
+			</ul>
+		
+		</li>
+		
+	</ul>
+	<ul class ="outer-menu">
+		<li>
+			<a class="h1" href="#">멘토찾기<span>▼</span></a>
+			<ul class="inner-menu">
+				
+				<li class="inner-menu1">
+				
+				<a href="#">지역별</a>
+				<ul class="inner-menu2">
+						<div id="box">
+						<input type="button" class="btn"value="서울">
+						<input type="button" class="btn"value="인천">
+						<input type="button" class="btn"value="경기">
+						<input type="button" class="btn"value="강원">
+						<input type="button" class="btn"value="충남"></br>
+						<input type="button" class="btn"value="충북">
+						<input type="button" class="btn"value="세종">
+						<input type="button" class="btn"value="대전">
+						<input type="button" class="btn"value="부산">
+						<input type="button" class="btn"value="울산">
+						</br>
+						<input type="button" class="btn"value="경남">
+						<input type="button" class="btn"value="경북">
+						<input type="button" class="btn"value="광주">
+						<input type="button" class="btn"value="전남">
+						<input type="button" class="btn"value="전북">
+						</br>
+						<input type="button" class="btn"value="대구">
+						<input type="button" class="btn"value="제주">
+						<input type="button" class="btn"value="전국">
+						
+						
+						</div>
+					
+					</ul>
+				
+				</li>
+
+				<li class="inner-menu1">
+					<a href="#">분야별</a>
+
+					<ul class="inner-menu4">
+						<div id="box">
+						<input type="button" class="btn"value="중등">
+						<input type="button" class="btn"value="고등">
+						<input type="button" class="btn"value="일반">
+						<input type="button" class="btn"value="수학">
+						<input type="button" class="btn"value="영어"></br>
+						<input type="button" class="btn"value="과학">
+						<input type="button" class="btn"value="국어">
+						<input type="button" class="btn"value="중국어">
+						<input type="button" class="btn"value="일본어">
+						<input type="button" class="btn"value="IT">
+						</br>
+						<input type="button" class="btn"value="미술">
+						<input type="button" class="btn"value="보컬">
+						<input type="button" class="btn"value="댄스">
+						<input type="button" class="btn"value="기타">
+						
+						</div>
+					</ul>
+
+							</li>
+				
+			</ul>
+		</li>
+		
+	</ul>
+	<ul class ="outer-menu">
+		<li>
+			<a class="h1" href="#">글쓰기<span>▼</span></a>
+			<ul class="inner-menu">
+				<li><a href="18,19p.html">글쓰기</a></li>
+				<li><a href="22p.html">내가 쓴 글</a></li>
+			</ul>
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="footer-area" class="section">
+</div>
+</form>
+</body>
+</html>

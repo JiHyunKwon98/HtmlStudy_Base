@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>가입 창</title>
+  <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=0" charset="UTF-8">
+
+
+<script src="jquery-1.12.0.min.js"> </script>
+<script>
+	
+	$(document).ready (function(){
+    var counter = 1;
+    $('.btnAdd1').click(function(event){
+        event.preventDefault();
+
+        var newRow = jQuery('<input type="text" name="local">&nbsp;&nbsp;<select id="locallist" name="locallists"  required autofocus><option value="--직접입력--"selected >--직접입력--</option><option value="서울">서울</option> <option value="광주">광주</option> <option value="대구">대구</option> <option value="대전">대전</option> <option value="부산">부산</option> <option value="울산">울산</option> <option value="강원">강원</option> <option value="충남">충남</option> <option value="전남">전남</option> <option value="전북">전북</option> <option value="제주">제주</option> <option value="강원">강원</option> <option value="전국">전국</option> </select><input type="button" class="btnRemove1" value="삭제"><br>');
+            counter++;
+
+        $('.buttons1').append(newRow);
+        $('.btnRemove1').on('click',function(){
+                $(this).prev().remove();
+                $(this).prev().remove();
+                $(this).next ().remove();
+                $(this).remove();
+
+            });
+        });
+
+    $('.btnAdd2').click(function(event){
+        event.preventDefault();
+
+        var newRow = jQuery('<input id="a" type="text" name="local2">&nbsp;&nbsp;<select id="locallist2" name="locallists2"  required autofocus><option value="--직접입력--"selected >--직접입력--</option><option value="중들">중등</option> <option value="고등">고등</option> <option value="일반">일반</option> <option value="수학">수학</option> <option value="영어">영어</option> <option value="과학">과학</option> <option value="국어">국어</option> <option value="중국어">중국어</option> <option value="일본어">일본어</option> <option value="IT">IT</option><option value="중국어">미술</option> <option value="중국어">보컬</option> <option value="중국어">댄스</option> <option value="중국어">기타</option> </select><input type="button" class="btnRemove2" value="삭제"><br>');
+            counter++;
+
+        $('.buttons2').append(newRow);
+        $('.btnRemove2').on('click',function(){
+                $(this).prev().remove();
+                $(this).prev().remove();
+                $(this).next ().remove();
+                $(this).remove();
+
+            });
+        });
+
+
+
+     $('.btnAdd3').click(function(event){
+        event.preventDefault();
+
+        var newRow = jQuery('<select id="date" name="dates"  required autofocus><option value=""></option><option value="요일" selected>요일</option> <option value="월~일">월~일</option> <option value="월~토">월~토</option> <option value="평일">평일</option> <option value="주말">주말</option> <option value="주6">주6</option> <option value="주5">주5</option> <option value="주4">주4</option> <option value="주3">주3</option> <option value="주2">주2</option> <option value="주1">주1</option> <option value="무관">무관</option> </select>&nbsp;<select id="time" name="times"  required autofocus><option value="시간"selected >시간</option><option value="오전">오전</option> <option value="오후">오후</option> <option value="저녁">저녁</option> <option value="새벽">새벽</option> <option value="중국어">오전~오후</option> <option value="중국어">오후~저녁</option> <option value="중국어">저녁~새벽</option> <option value="무관">무관</option> </select><input type="button" class="btnRemove3" value="삭제"><br>');
+            counter++;
+
+        $('.buttons3').append(newRow);
+        $('.btnRemove3').on('click',function(){
+                $(this).prev().remove();
+                $(this).prev().remove();
+                $(this).next ().remove();
+                $(this).remove();
+
+            });
+        });
+
+
+    });
+
+
+
+	
+
+</script>
+
+
+<style type="text/css">
+	
+* {font-family: HanSans;}
+body {
+	margin: 0;
+}
+.section {
+	float: left;
+	width: 100%;
+} 
+
+#header-area h2{
+	text-align: center;
+	color: #34495E;
+	float: left;
+	width: 100%;
+	margin: 12px 0px;
+	line-height:100%;
+	}
+
+
+#header-area{
+	background-color:rgba(232, 156, 107, 0.6);
+	float: left;
+	width: 100%;
+}
+
+
+#content-area p{
+	font-size: 16px;
+	text-align:left;
+	margin: 15px 10px;
+}
+
+#content-area span{
+	color: #2980B9;
+}
+
+#wrapper{
+width: 375.33px;
+margin: 0 auto;
+}
+#content-area{
+width: 375.33px;
+margin: 0 auto;
+}
+
+#footer-area {
+	margin: 12px 0px;
+	text-align: center;
+}
+
+#next{
+	font-size: 14px;
+	background-color: #EDAE85;
+	color: white;
+	border-radius:6.5px;
+	border-style: none;
+	width: 45px;
+	height: 25px;
+	font-weight: bold;
+}
+.btnRemove1, .btnRemove2, .btnRemove3 {
+	border-style: none;
+	width: 45px;
+	height: 25px;
+	font-weight: bold;
+	
+	margin-left:10px;
+	background-color: #EDAE85;
+	border-radius:6.5px;color: white;}
+
+#nexts{
+	border-style: none;
+	width: 45px;
+	height: 25px;
+	font-weight: bold;
+	margin-right:10px; 
+	float: right;
+	font-size: 14px;
+	background-color: #EDAE85;
+	color: white;
+	border-radius:6.5px;
+}
+#back{
+	border-style: none;
+	width: 45px;
+	height: 25px;
+	font-weight: bold;
+	color: white;
+	margin-left:10px; 
+	float: left;
+	background-color: #EDAE85;
+	border-radius:6.5px;
+}
+textarea{
+
+	vertical-align: top;
+	height: 12em;
+	resize: vertical;
+	width: 24em;
+}
+#comment{
+	color:gray;
+	font-size: 10px;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div id="header-area" class="section">
+
+
+
+<h2>
+<input type="button" id="back" value="X" onclick="location.href='7p.html'">글쓰기<input type="button" id="nexts" value="완료" onclick="location.href='22p.html'">
+</h2>
+
+
+</div>
+
+<div id="wrapper">
+
+<form name="" action="" method="get">
+
+<div id="content-area" class="section">
+ 
+<p>제목&nbsp;<span>*</span><br><input id="a"type="text" name="title" maxlength="25"><br></p>
+
+<p ><a id="comment"><input type="checkbox" name="chk_info" value="stitle">주석&nbsp;<input id="a"type="text" name="stitlet" maxlength="25"><br></a></p>
+
+
+
+<p>희망지역&nbsp;<span>*</span><a id="comment">&nbsp;<input type="checkbox" name="chk_info" value="local">협의가능</a><br>
+
+<a class ="buttons1">
+<input type="text" name="local">&nbsp;&nbsp;
+<select id="locallist" name="locallists"  required autofocus>
+<option value="--직접입력--
+"selected >--직접입력--</option>
+<option value="서울">서울</option> 
+<option value="광주">광주</option> 
+<option value="대구">대구</option> 
+<option value="대전">대전</option> 
+<option value="부산">부산</option> 
+<option value="울산">울산</option> 
+<option value="인천">인천</option> 
+<option value="강원">강원</option> 
+<option value="충남">충남</option> 
+<option value="전남">전남</option> 
+<option value="전북">전북</option> 
+<option value="제주">제주</option> 
+<option value="강원">강원</option> 
+<option value="전국">전국</option> 
+</select>
+<input type="button" class="btnAdd1" id="next"  value="추가"> 
+<br></a>
+</p>
+
+<p>분야&nbsp;<span>*</span><br>
+
+<a class ="buttons2">
+
+<input id="a" type="text" name="local2">&nbsp;&nbsp;
+
+<select id="locallist2" name="locallists2"  required autofocus>
+<option value="--직접입력--"selected >--직접입력--</option>
+<option value="중들">중등</option> 
+<option value="고등">고등</option> 
+<option value="일반">일반</option> 
+<option value="수학">수학</option> 
+<option value="영어">영어</option> 
+<option value="과학">과학</option> 
+<option value="국어">국어</option> 
+<option value="중국어">중국어</option> 
+<option value="일본어">일본어</option> 
+<option value="IT">IT</option>
+<option value="중국어">미술</option> 
+<option value="중국어">보컬</option> 
+<option value="중국어">댄스</option> 
+<option value="중국어">기타</option> 
+</select>
+<input type="submit" id="next" class="btnAdd2"value="추가"> 
+
+<br></a>
+</p>
+
+<p>희망수강료&nbsp;<span>*</span><br><input id="a"type="text" name="money"maxlength="20" size="35" placeholder="ex)100,000원(희망기간을 기준으로)"><br></p>
+
+ <p>희망기간&nbsp;<span>*</span>&nbsp;&nbsp;<a id="comment"><input type="checkbox" name="chk_info" value="local">협의가능</a><br>
+ <input type="date" name="days">&nbsp;~&nbsp;<input type="date" name="days"></p>
+
+
+
+
+
+ <p>희망 요일 및 시간대 &nbsp;<span>*</span>&nbsp;&nbsp;<a id="comment"><input type="checkbox" name="chk_info" value="local">&nbsp;협의가능</a><br>
+
+<a class ="buttons3">
+
+<select id="date" name="dates"  required autofocus>
+<option value=""></option>
+<option value="요일" selected>요일</option> 
+<option value="월~일">월~일</option> 
+<option value="월~토">월~토</option> 
+<option value="평일">평일</option> 
+<option value="주말">주말</option> 
+<option value="주6">주6</option> 
+<option value="주5">주5</option> 
+<option value="주4">주4</option> 
+<option value="주3">주3</option> 
+<option value="주2">주2</option> 
+<option value="주1">주1</option> 
+<option value="무관">무관</option> 
+</select>
+
+&nbsp;
+
+<select id="time" name="times"  required autofocus>
+<option value="시간"selected >시간</option>
+<option value="오전">오전</option> 
+<option value="오후">오후</option> 
+<option value="저녁">저녁</option> 
+<option value="새벽">새벽</option> 
+<option value="중국어">오전~오후</option> 
+<option value="중국어">오후~저녁</option> 
+<option value="중국어">저녁~새벽</option> 
+<option value="무관">무관</option> 
+</select>
+
+
+
+<input type="submit" id="next" class="btnAdd3"  value="추가"> 
+
+
+</br>
+</a>
+</p>
+ 
+
+<p>세부사항 입력&nbsp;<span>*</span><br>
+	<textarea id = message placeholder="300자 이내"></textarea><br></p>
+
+<p>지원방법(선택)&nbsp;<span>*</span>&nbsp;&nbsp;<a id="comment">중복선택 가능</a><br>
+	<input type="checkbox" name="chk_info" value="method">&nbsp;E-mail<br>
+	<input id="a"type="email" name="mail"size=11>&nbsp;@
+<input id="a" type="email" name="mail"size=11>&nbsp;&nbsp;
+<select id="browsers" name="browsers"  required autofocus>
+<option value="직접입력" >직접입력</option>
+<option value="naver"selected>naver.com</option> 
+<option value="daum">daum.net</option> 
+<option value="nate">nate.com</option> 
+</select>
+<br>
+
+<input type="checkbox" name="chk_info" value="method">&nbsp;전화번호<br>
+<select>
+      <option> 010 </option>
+      <option> 011 </option>
+</select>&nbsp;-
+<input id="a"type = "text" size = "6"/> - <input id="a"type = "text" size = "6"/>
+<br>
+
+<input type="checkbox" name="chk_info" value="method">&nbsp;카카오톡ID<br>
+<input id="a"type = "text" size = "25"/> 
+
+</div>
+
+<div id="footer-area" class="section">
+</div>
+</form>
+</body>
+</html>

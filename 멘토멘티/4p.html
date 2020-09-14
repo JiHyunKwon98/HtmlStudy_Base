@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>멘토멘티</title>
+  <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=0">
+<style type="text/css">
+	
+* {font-family: HanSans;}
+body {
+	margin: 0;
+}
+.section {
+	float: left;
+	width: 100%;
+} 
+#header-area h1 {
+	margin: 12px 0px;
+	text-align: center;
+	color: #EDAE85;
+}
+
+#content-area p{
+	font-size: 16px;
+	text-align:left;
+	margin: 15px 10px;
+
+
+}
+
+#content-area span{
+	color: #2980B9;
+}
+
+#wrapper{
+width: 375.33px;
+margin: 0 auto;
+}
+#content-area{
+width: 375.33px;
+margin: 0 auto;
+}
+
+#a{
+	border:none;border-bottom: 1px solid #DDD;
+}
+#footer-area {
+	margin: 12px 0px;
+	text-align: center;
+}
+
+#next{
+	font-size: 14px;
+	font-weight:bold; 
+	background-color: #EDAE85;
+	color: white;
+	border-radius:6.5px;
+	border-style: none;
+	width: 50px;
+	height: 25px;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div id="header-area" class="section">
+<h1>멘토-멘티</h1>
+</div>
+
+<div id="wrapper">
+
+<form name="" action="" method="get">
+<div id="content-area" class="section">
+
+
+ <p><span>*</span>ID&nbsp;<input id="a"type="text" name="ID" maxlength="10"><br></p>
+
+<p><span>*</span>PW&nbsp;<input id="a"type="password1" name="pw1"maxlength="15" ><br></p>
+
+<p><span>*</span>PW재확인&nbsp;<input id="a"type="password2" name="pw2"maxlength="15"><br></p>
+
+ <p><span>*</span>성명&nbsp;<input id="a"type="text" name="person" maxlength="10"><br></p>
+
+ <p><span>*</span>성별&nbsp;<input type="radio" name="sex" value="male"> 남자
+ <input id="a"type="radio" name="sex" value="feamale"> 여자
+  <br></p>
+
+<p><span>*</span>PH&nbsp;
+<select>
+      <option> 010 </option>
+      <option> 011 </option>
+</select>&nbsp;-
+<input id="a"type = "text" size = "6"/> - <input id="a"type = "text" size = "6"/>
+<br>
+</p>
+
+<p><span>*</span>생년월일&nbsp;<input type="date" name="birthday"><br></p>
+
+<p><span>*</span>Mail&nbsp;<input id="a"type="email" name="mail"size = "11">&nbsp;@
+<input id="a" type="email" name="mail" size = "11">&nbsp;&nbsp;
+<select id="browsers" name="browsers"  required autofocus>
+<option value="직접입력" >직접입력</option>
+<option value="naver"selected>naver.com</option> 
+<option value="daum">daum.net</option> 
+<option value="nate">nate.com</option> 
+</select>
+<br>
+<br>
+</p>
+
+</div>
+</div>
+
+<div id="footer-area" class="section">
+
+
+<input type="button" id="next" value="다음" onclick="location.href='5.html'">
+
+</div>
+</form>
+
+
+
+</body>
+</html>

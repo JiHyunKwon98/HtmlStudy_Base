@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>멘토멘티</title>
+	<style>
+		* { margin: 0; padding: 0; }
+
+		#header-area {
+			float: left;
+			width: 100%;
+			height: 240px;
+			background-color: rgba(232, 156, 107, 0.6);
+		}
+
+		.text {
+			text-align: center;
+			line-height: 150px;
+			font-size: 3.8em;
+			font-weight: bold;
+			font-family: '본고딕';
+			color: rgb(52, 73, 94);
+		}
+
+		.nmt {
+			float: right;
+			position: fixed;
+			top: 38px; right: 150px;
+			font-size: 3em;
+		}
+
+		.menuicon {
+			position: fixed;
+			top: 40px; left: 40px;
+			width: 90px;
+		}
+
+		.usericon {
+			position: fixed;
+			top: 40px; right: 40px;
+			width: 80px;
+		}
+
+		.searchicon {
+			position: fixed;
+			top: 130px; right: 250px;
+			width: 70px;
+		}
+
+		.search {
+			position: fixed;
+			top: 140px; right: 250px;
+			width: 500px; height: 60px;
+			font-size: 50px;
+			background-color: rgb(241, 196, 166); 
+			border-style: none;
+			border-bottom: 5px solid gray;
+		}
+
+		.bellicon {
+			position: fixed;
+			top: 140px; right: 45px;
+			width: 70px;
+		}
+
+		#menu-area {
+			float: left;
+			width: 100%;
+			height: 100px;
+			background-color: rgba(232, 156, 107, 0.76);
+		}
+
+		.mt-t {
+			float: left;
+			text-align: center;
+			font-size: 3em;
+			padding: 20px 0px;
+			width: 33%;
+			color: rgb(52, 73, 94);
+			border-right: 2px solid #DDD;
+		}
+
+		.mt-s {
+			display: inline-block;
+			text-align: center;
+			font-size: 3em;
+			padding: 20px 0px;
+			width: 33%;
+			color: rgb(52, 73, 94);
+		}
+
+		.board {
+			float: right;
+			position: relative;
+			text-align: center;
+			font-size: 3em;
+			padding: 20px 0px;
+			width: 33%;
+			color: rgb(52, 73, 94);
+			border-left: 2px solid #DDD;
+		}
+
+		.line {
+			text-decoration:none;
+			color: rgb(52, 73, 94);
+		}
+
+		#newpos-area {
+			position: relative;
+			float: left;
+			width: 100%;
+			height: 400px;
+			background-color: rgba(255, 148, 78, 0.08);
+			overflow-y: scroll;
+		}
+
+		.newpos-in {
+			display: inline-block;
+			float: left;
+			width: 350px; height: 350px;
+			margin: 25px;
+			border-radius: 50%;
+			background-color: rgb(224, 224, 224);
+		}
+
+		#fbd-area {
+			position: relative;
+			float: left;
+			width: 100%;
+			height: 500px;
+		}
+
+		.free {
+			padding-left: 40px;
+			line-height: 500px;
+			width: 300px;
+			font-size: 2.8em;
+			font-family: '본고딕';
+			font-weight: bold;
+			color: rgb(52, 73, 94);
+		}
+
+		.freebd {
+			float: right;
+			margin-right: 20px;
+			margin-top: 50px;
+			height: 400px;
+			color: gray;
+			font-size: 1.8em;
+			border-radius: 8px;
+		}
+
+		#qbd-area {
+			position: relative;
+			float: left;
+			width: 100%;
+			height: 500px;
+			background-color: rgba(255, 148, 78, 0.08);
+		}
+
+	</style>
+</head>
+<body>
+	<div id="header-area">
+		<p class="text">멘토멘티</p>
+		<p class="nmt">o o o</p>
+		<input type="text" name="search" class="search">
+		<a href="7p.html">
+		<img class="menuicon" src="images/menu.png">
+		</a>
+		<a href="21.html">
+		<img class="usericon" src="images/user.png">
+		</a>
+		<img class="searchicon" src="images/search.png">
+		<img class="bellicon" src="images/bell.png">
+	</div>
+	<div id="menu-area">
+		<p class="mt-t">
+			<a href="9.html" class="line">멘티찾기</a>
+		</p>
+		<p class="mt-s">
+			<a href="9-1.html" class="line">멘토찾기</a>
+		</p>
+		<p class="board">게시판</p>
+	</div>
+	<div id="newpos-area">
+		<div class="newpos-in"></div>
+		<div class="newpos-in"></div>
+		<div class="newpos-in"></div>
+		<div class="newpos-in"></div>
+	</div>
+	<div id="fbd-area">
+		<textarea class="freebd" cols="50" rows="5">아직 게시글이 없습니다.</textarea>
+		<p class="free">자유 게시판 ></p>
+	</div>
+	<div id="qbd-area">
+		<textarea class="freebd" cols="50" rows="5">아직 게시글이 없습니다.</textarea>
+		<p class="free">질문 게시판 ></p>
+	</div>
+</body>
+</html>

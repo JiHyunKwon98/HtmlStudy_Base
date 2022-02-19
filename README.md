@@ -7,4 +7,4 @@
 
 - HTML, CSS, JQuery
 #####  UI PPT 
-<a href="https://docs.google.com/presentation/d/1qWEsW29Igaa-J8sJL42_BQnphiKwTzmG/edit?usp=sharing&ouid=112883907693137893921&rtpof=true&sd=true"><img src="https://img.shields.io/badge/Google Drive-4285F4?style=for-the-badge&logo=Google Drive&logoColor=white"> 
+<a href="https://drive.google.com/file/d/1IPcHbKv3yVUzwaMzzlq2O3XPjTnG0isM/view?usp=sharing"><img src="https://img.shields.io/badge/Google Drive-4285F4?style=for-the-badge&logo=Google Drive&logoColor=white"> 
